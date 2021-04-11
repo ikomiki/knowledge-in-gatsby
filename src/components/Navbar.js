@@ -23,11 +23,11 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
+            navBarActiveClass: 'is-active',
+          })
           : this.setState({
-              navBarActiveClass: '',
-            })
+            navBarActiveClass: '',
+          })
       }
     )
   }
@@ -45,6 +45,7 @@ const Navbar = class extends React.Component {
               <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
             </Link>
             {/* Hamburger menu */}
+            {/* eslint-disable-next-line */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -63,23 +64,17 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/about">
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+              <Link className="navbar-item" to="/portfolio">
+                Portfolio
               </Link>
               <Link className="navbar-item" to="/blog">
                 Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+                href="https://github.com/ikomiki/knowledge-in-gatsby"
                 target="_blank"
                 rel="noopener noreferrer"
               >
