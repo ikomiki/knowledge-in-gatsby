@@ -19,7 +19,7 @@ export const PortfolioPageTemplate = ({
   pricing,
 }) => (
   <div className="content">
-    <div
+    {/* <div
       className="full-width-image-container margin-top-0"
       style={{
         backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -84,8 +84,8 @@ export const PortfolioPageTemplate = ({
                 className="full-width-image-container"
                 style={{
                   backgroundImage: `url(${fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage
+                    ? fullImage.childImageSharp.fluid.src
+                    : fullImage
                     })`,
                 }}
               />
@@ -98,7 +98,7 @@ export const PortfolioPageTemplate = ({
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
   </div>
 )
 
